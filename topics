@@ -1,0 +1,22 @@
+$ rostopic list
+/clicked_point
+/diagnostics
+/drive_steering
+/drive_throttle
+/initialpose
+/joy
+/map
+/map_metadata
+/map_updates
+/move_base_simple/goal
+/poseupdate
+/rosout
+/rosout_agg
+/scan
+/slam_cloud
+/slam_out_pose
+/syscommand
+/tf
+/tf_static
+/trajectory
+

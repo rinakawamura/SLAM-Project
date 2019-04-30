@@ -1,0 +1,5 @@
+<launch>
+  <node name="joy_node" pkg="joy" type="joy_node" />
+  <node name="xbox_controller" pkg="project_team3" type="xbox_controller.py" />
+  <node name="pwm_gen" pkg="project_team3" type="pwm_gen.py" />
+</launch>
