@@ -69,4 +69,7 @@
     <arg name="trajectory_source_frame_name" value="$(arg tf_map_scanmatch_transform_frame_name)"/>
     <arg name="map_file_path" value="$(arg geotiff_map_file_path)"/>
   </include>
+
+  <!-- Wall highlighting node -->
+  <node name="segmentation" pkg="project_team3" type="segmentation.py" />
 </launch>
