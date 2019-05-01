@@ -44,15 +44,16 @@ def map_callback(data):
 	draw.id = id_no
 	draw.type = Marker.LINE_LIST
 	draw.pose = data.info.origin
-	draw.scale = Vector3(0.03, 0, 0)
-	draw.lifetime = rospy.Duration(5)
+	draw.scale = Vector3(0.05, 0, 0)
+	draw.lifetime = rospy.Duration(3)
 	draw.frame_locked = False
 	points = []
 	colors = []
 	for pair in nearby:
 		i, j = pair
-		points.append(Point(res*obs_loc[1][i], res*obs_loc[0][i], 0))
-		points.append(Point(res*obs_loc[1][j], res*obs_loc[0][j], 0))
+		z = 0.001
+		points.append(Point(res*obs_loc[1][i], res*obs_loc[0][i], z))
+		points.append(Point(res*obs_loc[1][j], res*obs_loc[0][j], z))
 		color = ColorRGBA(0, 0, 1, 0.7)
 		colors.append(color)
 		colors.append(color)
