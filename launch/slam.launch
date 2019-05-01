@@ -14,7 +14,7 @@
 
   <!-- Visualization service -->
   <node pkg="rviz" type="rviz" name="rviz"
-    args="-d $(find hector_slam_launch)/rviz_cfg/mapping_demo.rviz"/>
+    args="-d $(find project_team3)/rviz_cfg/mapping.rviz"/>
 
   <!-- rplidar launch script -->
   <include file="$(find rplidar_ros)/launch/rplidar.launch" />
